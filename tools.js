@@ -12,7 +12,7 @@ if(!web3 || !web3.version || !web3.version.client || web3.version.client.length 
 } else if(web3.version.client.substring(0,4) === "Geth") {
     loadScript('gethTools.js');
     tools.ether.checkCoinbase();
-} else if(web3.version.client.substring(0,3) === "Eth") {
+} else if(web3.version.client.substring(0,5) === "++eth") {
     loadScript('ethTools.js');
     tools.ether.checkCoinbase();
 } else {
