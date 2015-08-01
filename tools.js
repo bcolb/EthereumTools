@@ -11,10 +11,10 @@ if(!web3 || !web3.version || !web3.version.client || web3.version.client.length 
     console.log("tools.js failed to load");
 } else if(web3.version.client.substring(0,4) === "Geth") {
     loadScript('gethTools.js');
-    tools.ether.checkCoinbase();
+    loadScript('afterLoad.js');
 } else if(web3.version.client.substring(0,5) === "++eth") {
     loadScript('ethTools.js');
-    tools.ether.checkCoinbase();
+    loadScript('afterLoad.js');
 } else {
     console.log("Ethereum client verion could not be determined");
     console.log("tools.js failed to load");
