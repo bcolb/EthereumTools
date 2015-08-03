@@ -2,6 +2,8 @@
 
 A collection of tools that extends the functionality of the interactive javascript console used in geth and eth.
 
+Note: The current version only works with geth. Eth support is under development.
+
 ## Usage
 
 First, start Eth or Geth. Then navigate to the directory with tools.js and execute the following line of javascript:
